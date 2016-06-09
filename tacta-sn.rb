@@ -13,6 +13,11 @@ get '/contacts' do
    erb :'contacts/index'
 end
 
+#Search (something in process)
+get '/contacts/search_form' do
+  erb :'contacts/search_form'
+end
+
 get '/contacts/new' do
    erb :'contacts/new'
 end
@@ -71,3 +76,19 @@ get '/contacts/:i/delete' do
 
    redirect "/contacts"
 end
+
+
+
+
+# def action_search( contacts )
+#    puts
+#    pattern = ask "Search for? "
+#    puts
+#
+#    contacts.each do |contact|
+#       if contact[:name] =~ /\b#{pattern}/i
+#          show( contact )
+#          puts
+#       end
+#    end
+# end

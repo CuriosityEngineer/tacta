@@ -1,8 +1,12 @@
-<h1><%= @contact[:name] %></h1>
-<p><%= @contact[:phone] %></p>
-<p><%= @contact[:email] %></p>
-
+<div class="card-panel teal">
+          <span class="white-text"><h2><%= @contact[:name] %></h2>
+          <p><%= @contact[:phone] %></p>
+          <p><%= @contact[:email] %></p>
+          </span>
+        </div>
 <br>
-<a href="/contacts/<%= @i %>/edit">[Edit]</a>
-<a href="/contacts/<%= @i %>/delete">[Delete]</a>
-<a href="/contacts">[Index]</a>
+<a class="waves-effect waves-light btn" href="/contacts">Index</a>
+<br>
+<a class="waves-effect waves-light btn" href="/contacts/<%= @i %>/edit">Edit</a>
+<br>
+<a class="waves-effect waves-light btn" href="/contacts/<%= @i %>/delete">Delete</a>

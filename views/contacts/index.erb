@@ -1,8 +1,13 @@
 <h2>Contacts</h2>
 
-<% @contacts.each_with_index do |contact, i| %>
-    <h3><a href="/contacts/<%= i %>"><%= contact[:name] %></a></h3>
-<% end %>
-
+<a class="waves-effect waves-light btn" href="/contacts/new">New Contact</a>
 <br>
-<a href="/contacts/new">[New]</a>
+<a class="waves-effect waves-light btn" href="/contacts/search_form">Search</a>
+<br>
+
+
+        <% @contacts.each_with_index do |contact, i| %>
+
+            <h6><a href="/contacts/<%= i %>"><%= contact[:name] %></a></h6>
+
+        <% end %>
