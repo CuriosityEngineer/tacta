@@ -1,4 +1,4 @@
-require "./contacts"
+require "./contacts_file"
 
 def index(contacts)
   contacts.each_with_index do |contact, i|

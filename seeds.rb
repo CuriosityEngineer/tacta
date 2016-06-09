@@ -1,4 +1,4 @@
-require './contacts'
+require './contacts_file'
 
 contacts = []
 
