@@ -60,3 +60,14 @@ post '/contacts/:i/update' do
 
    redirect "/contacts/#{i}"
 end
+
+#Delete a contact
+get '/contacts/:i/delete' do
+   i = params[:i].to_i
+
+   contacts = read_contacts
+   contacts.delete_at( i )
+   write_contacts( contacts )
+
+   redirect "/contacts"
+end
